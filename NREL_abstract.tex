@@ -1,0 +1,24 @@
+\documentclass[11pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Uncertainty Quantification Using Tensor Decompositions}
+\author{Matthew Reynolds}
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Separated representations (SRs) and the canonical tensor decomposition (CTD) are efficient tools for addressing computational issues due to the curse of dimensionality. Such issues arise while solving partial differential equations with random data in the context of uncertainty quantification (UQ). In this talk I will start with an introduction to SRs and CTDs and discuss their applications in UQ.  The discussion will then move to three specific applications of SRs and CTDs in UQ: a randomized variant of the popular alternating least squares algorithm for solving partial differential equations with random data, a global, non-convex optimization algorithm using CTDs, and time permitting, sampling methods for non-intrusive SR algorithms in UQ. 
+  
+\end{abstract}
+
+
+
+\end{document}  
